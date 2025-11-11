@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Hitungrekursif"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-11 08:40:58 PM"/>
+        <attribute name="created" value="VXNlcjtOQURJTlNJVFVNRUFORzsyMDI1LTExLTExOzA4OjE5OjMzIFBNOzI3NDM="/>
+        <attribute name="edited" value="VXNlcjtOQURJTlNJVFVNRUFORzsyMDI1LTExLTExOzA4OjQwOjU4IFBNOzI7Mjg1Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="n" expression="Hitungrekursif(n)"/>
+            <output expression="n" newline="True"/>
+        </body>
+    </function>
+    <function name="Hitungrekursif" type="Integer" variable="result">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <if expression="n==1">
+                <then>
+                    <assign variable="result" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="result" expression="Hitungrekursif(n-1)+n"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
