@@ -1,3 +1,5 @@
+// Nadin Situmeang - 12S25052
+// Miransya Gresia Siagian - 12S25031
 import java.util.*;
 import java.lang.Math;
 
